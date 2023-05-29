@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import Button from './components/Button/Button.jsx'
 import ButtonPageRedirect from './components/ButtonPageRedirect/ButtonPageRedirect.jsx'
 import ContainerButtonPageDirect from './containers/ContainerButtonPage/ContainerButtonPageDirect.jsx'
-// import './App.css'
+import Loading from './components/Loading/Loading.jsx'
 const cx = classNames.bind(styles)
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
                 2
             </ButtonPageRedirect>
             <ContainerButtonPageDirect number={11} link="homee" />
+            <Loading />
         </Router>
     )
 }
