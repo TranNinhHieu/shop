@@ -4,8 +4,6 @@ import styles from './Button.module.scss'
 import { Link } from 'react-router-dom'
 const cx = classNames.bind(styles)
 function Button({ children, title, link, active }) {
-    console.log(title)
-
     return (
         <Link to={link}>
             <div className={active ? cx('wrapper', 'active') : cx('wrapper')}>{children}</div>

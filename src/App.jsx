@@ -23,7 +23,7 @@ function App() {
             <ButtonPageRedirect link="/home/2" active={true}>
                 2
             </ButtonPageRedirect>
-            <ContainerButtonPageDirect number="11" />
+            <ContainerButtonPageDirect number={11} link="homee" />
         </Router>
     )
 }

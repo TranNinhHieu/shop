@@ -1,18 +1,18 @@
-import React from 'react'
-import ButtonPageRedirect from '../../components/ButtonPageRedirect/ButtonPageRedirect.jsx'
+import React, { useState } from 'react'
 import classNames from 'classnames/bind'
 import styles from './ContainerButtonPageDirect.module.scss'
-import { numberToMap } from '../../utils/numberToMap.js'
+import './ContainerButtonPageDirect.scss'
+import PaginationCustom from '../../components/PaginationCustom/PaginationCustom.jsx'
 const cx = classNames.bind(styles)
 function ContainerButtonPageDirect({ number, link }) {
-    const pages = numberToMap(number)
+    const [page, setPage] = useState(1)
+    const handlePageChange = (event, value) => {
+        setPage(value)
+    }
+
     return (
-        <div className="cont">
-            {pages.map((page, index) => (
-                <ButtonPageRedirect active={page.number === 3 && true} key={index}>
-                    {page.number}
-                </ButtonPageRedirect>
-            ))}
+        <div className={cx('ContainerButtonPageDirect')}>
+            <PaginationCustom number={number} page={page} link={link} handlePageChange={handlePageChange} />
         </div>
     )
 }
