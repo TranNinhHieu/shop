@@ -1,0 +1,40 @@
+@import 'normalize.css';
+
+:root {
+    --standard: 10px;
+    --orangeC: #f18121;
+    --black: #000;
+    --bluesky: rgba(132, 239, 237, 0.381);
+    --radius: 10px;
+    --white: #fff;
+    --bgcl: #ebebeb;
+    --white2: rgb(247, 247, 247);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    // -webkit-user-select: none;
+    // -khtml-user-select: none;
+    // -moz-user-select: none;
+    // -ms-user-select: none;
+    // -o-user-select: none;
+    // user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
