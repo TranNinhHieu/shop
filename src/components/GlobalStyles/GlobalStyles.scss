@@ -1,14 +1,26 @@
 @import 'normalize.css';
 
 :root {
-    --standard: 10px;
-    --orangeC: #f18121;
-    --black: #000;
-    --bluesky: rgba(132, 239, 237, 0.381);
-    --radius: 10px;
-    --white: #fff;
-    --bgcl: #ebebeb;
+
+    // default color
+    --defaultColor1: #efa162;
+    --active: #f08632;
+    --white1: #fff;
     --white2: rgb(247, 247, 247);
+    --black1: #000;
+    --bgcl: #ebebeb;
+    --bluesky: rgba(132, 239, 237, 0.381);
+    // default px
+    --standard: 10px;
+    --radius: 10px;
+    --rad4: 20px;
+    --mg1: 5px;
+    --p1: 35px;
+    --p2: 20px;
+    --p3: 18px;
+    --p4: 40px;
+    // font weight
+    --fw1: 600;
 }
 
 * {

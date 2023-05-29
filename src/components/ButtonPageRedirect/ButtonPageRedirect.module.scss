@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--p4);
+    height: var(--p4);
+    border-radius: var(--rad4);
+    background-color: var(--defaultColor1);
+    transition: transform 0.3s ease;
+    margin: var(--mg1);
+    color: var(--white1);
+
+    &:hover {
+        background: var(--black1);
+        transform: scale(1.05);
+    }
+}
+
+.active {
+    background-color: var(--active);
+}

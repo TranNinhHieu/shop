@@ -1,11 +1,9 @@
 import React from 'react'
-import classNames from 'classnames/bind'
-import styles from './Button.module.scss'
 import { Link } from 'react-router-dom'
+import classNames from 'classnames/bind'
+import styles from './ButtonPageRedirect.module.scss'
 const cx = classNames.bind(styles)
-function Button({ children, title, link, active }) {
-    console.log(title)
-
+function ButtonPageRedirect({ children, active, link }) {
     return (
         <Link to={link}>
             <div className={active ? cx('wrapper', 'active') : cx('wrapper')}>{children}</div>
@@ -13,4 +11,4 @@ function Button({ children, title, link, active }) {
     )
 }
 
-export default Button
+export default ButtonPageRedirect
